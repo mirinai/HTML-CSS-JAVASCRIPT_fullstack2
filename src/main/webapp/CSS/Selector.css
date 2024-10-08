@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+/* 모든 요소에 적용: 글씨를 굵게 설정하고, 색상을 darkorange로 설정 */
+* {
+    font-weight: bold;
+    color: darkorange;
+}
+
+/* 모든 요소에 적용: 색상을 plum으로 덮어씀 (위의 color 설정을 덮어씀) */
+* {
+    color: plum;
+}
+
+/* p 요소에 적용: 색상을 olivedrab로 설정 */
+p {
+    color: olivedrab;
+}
+
+/* 클래스가 blue인 요소에 적용: 색상을 lightblue로 설정 */
+.blue {
+    color: lightblue;
+}
+
+/* 클래스가 blue인 p 요소에 적용: 색상을 slateblue로 설정 (p 요소에 대한 특정 설정) */
+p.blue {
+    color: slateblue;
+}
+
+/* 클래스가 blue와 dark를 모두 가진 요소에 적용: 색상을 mediumblue로 설정 */
+.blue.dark {
+    color: mediumblue;
+}
+
+/* 클래스가 blue와 dark를 모두 가진 p 요소에 적용: 색상을 darkblue로 설정 (p 요소에 대한 특정 설정) */
+p.blue.dark {
+    color: darkblue;
+}
+
+/* id가 red인 요소에 적용: 색상을 tomato로 설정 */
+#red {
+    color: tomato;
+}
+
+/* span 요소, 클래스가 dark인 요소, id가 red인 요소에 적용: 밑줄을 그어 텍스트 강조 */
+span, .dark, #red {
+    text-decoration: underline;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>tags</title>
+</head>
+<body>
+	<div>
+		<!-- 제목: 인풋 요소의 공통 속성을 설명하는 헤더 -->
+		<h1>인풋 요소의 공통속성</h1>
+		<form action="#">
+			<!-- value 속성 설명 -->
+			<label for="valIp">value</label> <br> 
+			<input id="valIp"
+				type="text" value="정해짐">
+			<!-- value: 입력 필드의 초기값을 지정 (기본값으로 "정해짐"이 입력됨) -->
+			<br>
+			<br>
+
+			<!-- autofocus 속성 설명 -->
+			<label for="afIp">autofocus</label> <br> 
+			<input id="afIp"
+				type="text" placeholder="자동 포커스됨" autofocus>
+			<!-- autofocus: 페이지 로드 시 자동으로 입력 필드에 포커스를 줌 -->
+			<!-- placeholder: 입력 필드에 대한 힌트 텍스트 표시 -->
+			<br>
+			<br>
+
+			<!-- readonly 속성 설명 -->
+			<label for="roIp">read only</label> <br> 
+			<input id="roIp"
+				type="text" placeholder="읽을 수 만 있음, 전송됨" readonly>
+			<!-- readonly: 사용자가 값을 변경할 수 없도록 설정, 입력 필드가 읽기 전용이 됨 (전송은 가능) -->
+			<br>
+			<br>
+
+			<!-- disabled 속성 설명 -->
+			<label for="daIp">disabled</label> <br> 
+			<input id="daIp"
+				type="text" placeholder="입력 못 함, 전송 안됨" disabled>
+			<!-- disabled: 입력이 불가능하며, 폼 제출 시 전송되지 않음 -->
+			<br>
+			<br>
+
+			<!-- required 속성 설명 -->
+			<label for="rgIp">required</label> <br> 
+			<input id="rgIp"
+				type="text" placeholder="반드시 입력해야 함" required>
+			<!-- required: 필수 입력 필드로 설정, 값이 없으면 폼 제출 불가 -->
+<!-- 			<br> -->
+<!-- 			<br> -->
+
+<!-- 			<!-- 중복된 required 설명 -->
+<!-- 			<label for="rqIp">required</label> <br>  -->
+<!-- 			<input id="rqIp" -->
+<!-- 				type="text" placeholder="반드시 입력해야 함" required> -->
+			<!-- required: 필수 입력 필드로 설정, 값이 없으면 폼 제출 불가 -->
+			<br>
+			<br>
+
+			<!-- radio 버튼 예시 (checked와 disabled 설명 포함) -->
+			<input type="radio" name="fruit" id="f_apple" value="apple" checked>
+			<label for="f_apple">사과</label>
+			<!-- checked: 기본적으로 선택된 상태로 표시 -->
+
+			<input type="radio" name="fruit" id="f_orange" value="orange"
+				disabled> <label for="f_orange">오렌지(다 팔림)</label>
+			<!-- disabled: 선택 불가능하게 설정 (폼 제출 시 전송되지 않음) -->
+			<br> <br>
+			<br>
+
+			<!-- 폼 제출 버튼 -->
+			<button type="submit">submit</button>
+			<!-- type="submit": 폼 데이터를 서버로 전송 -->
+		</form>
+	</div>
+</body>
+</html>

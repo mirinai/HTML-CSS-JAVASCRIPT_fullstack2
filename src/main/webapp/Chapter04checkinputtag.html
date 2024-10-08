@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>check</title>
+</head>
+<body>
+	<div>
+    <!-- 제목: 체크와 관련된 입력 타입을 설명하는 헤더 -->
+    <h1>체크 관련 인풋 타입</h1>
+    <form action="#">
+        <!-- 체크박스를 설명하는 섹션 -->
+        <h2>checkbox</h2>
+        <div style="border: 1px solid yellow">
+            <input id="cbIp" type="checkbox" checked>
+            <!-- id: 요소의 고유 식별자 -->
+            <!-- type: 입력 요소의 타입을 정의 (checkbox는 체크박스를 의미) -->
+            <!-- checked: 체크박스가 기본적으로 선택된 상태로 표시되도록 설정 -->
+            <label for="cbIp">유기농</label>
+            <!-- label 요소: 입력 필드에 대한 설명을 제공 -->
+            <!-- for: 해당 입력 필드의 id와 연결하여 클릭 시 입력 요소를 활성화 -->
+        </div>
+        
+        <div>
+            <!-- 라디오 버튼을 설명하는 섹션 -->
+            <h2>radio</h2>
+            <!-- 과일 선택 라디오 버튼 그룹 -->
+            <label for="f_apple">사과</label>
+            <input id="f_apple" type="radio" name="fruit" value="apple">
+            <!-- id: 요소의 고유 식별자 -->
+            <!-- type: 입력 요소의 타입을 정의 (radio는 라디오 버튼을 의미) -->
+            <!-- name: 같은 그룹으로 묶어서 하나의 선택만 가능하게 함 (fruit 그룹 내에서 하나만 선택 가능) -->
+            <!-- value: 선택된 경우 전달될 값 ("apple") -->
+            
+            <label for="f_grape">포도</label>
+            <input id="f_grape" type="radio" name="fruit" value="grape">
+            <!-- 라디오 버튼: 과일 중 포도 선택 -->
+            
+            <label for="f_orange">오렌지</label>
+            <input id="f_orange" type="radio" name="fruit" value="orange">
+            <!-- 라디오 버튼: 과일 중 오렌지 선택 -->
+            
+            <!-- 야채 선택 라디오 버튼 그룹 -->
+            <label for="v_carrot">당근</label>
+            <input id="v_carrot" type="radio" name="vege" value="carrot">
+            <!-- id: 요소의 고유 식별자 -->
+            <!-- name: 야채 그룹 내에서 하나의 선택만 가능하게 설정 ("vege") -->
+            <!-- value: 선택된 경우 전달될 값 ("carrot") -->
+            
+            <label for="v_tomato">토마토</label>
+            <input id="v_tomato" type="radio" name="vege" value="tomato">
+            <!-- 라디오 버튼: 야채 중 토마토 선택 -->
+        </div>
+        
+    </form>
+
+</div>
+</body>
+</html>

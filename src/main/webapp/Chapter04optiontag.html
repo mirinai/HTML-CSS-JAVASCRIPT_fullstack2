@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>옵션태그</title>
+</head>
+<body>
+	<div>
+    <!-- 언어 선택을 위한 드롭다운 메뉴 -->
+    <label for="lang">언어</label>
+    <br>
+    <select id="lang">
+        <!-- 기본 선택 옵션 (빈 값) - 사용자가 언어를 선택하지 않았을 때 표시되는 기본값 -->
+        <option value="">-- 언어 고르기 --</option>
+        <!-- 각 언어 선택 옵션 -->
+        <option value="html">HTML</option> <!-- HTML 언어 선택 -->
+        <option value="css">CSS</option> <!-- CSS 언어 선택 -->
+        <option value="js">Java Script</option> <!-- JavaScript 언어 선택 -->
+        <option value="ts">Type Script</option> <!-- TypeScript 언어 선택 -->
+    </select>
+    
+    <br><br>
+    
+    <!-- optgroup 태그 설명 섹션 -->
+    <h2>optgroup 태그</h2>
+    <!-- 쇼핑 목록 선택을 위한 드롭다운 메뉴 -->
+    <label for="shopping">쇼핑 목록</label>
+    <br>
+    <select id="shopping">
+        <!-- 과일 그룹 - optgroup을 사용하여 "과일" 항목들을 그룹화 -->
+        <optgroup label="과일">
+            <option value="f_apl">사과</option> <!-- 사과 옵션 -->
+            <option value="f_grp">포도</option> <!-- 포도 옵션 -->
+            <option value="f_org">오렌지</option> <!-- 오렌지 옵션 -->
+        </optgroup>
+        <!-- 채소 그룹 - optgroup을 사용하여 "채소" 항목들을 그룹화 -->
+        <optgroup label="채소">
+            <option value="v_crt">당근</option> <!-- 당근 옵션 -->
+            <option value="v_tmt">토마토</option> <!-- 토마토 옵션 -->
+            <option value="v_ept">가지</option> <!-- 가지 옵션 -->
+        </optgroup>
+        <!-- 고기 그룹 - optgroup을 사용하여 "고기" 항목들을 그룹화 -->
+        <optgroup label="고기">
+            <option value="m_bef">소고기</option> <!-- 소고기 옵션 -->
+            <option value="m_prk">돼지고기</option> <!-- 돼지고기 옵션 -->
+            <option value="m_ckn">닭고기</option> <!-- 닭고기 옵션 -->
+        </optgroup>
+    </select>
+    
+    <br><br>
+    
+    <!-- datalist 태그 설명 섹션 -->
+    <h2>datalist 태그</h2>
+    <!-- 현재 직업 입력을 위한 인풋 필드와 추천 목록 -->
+    <label for="job">현재직업</label> <br>
+    <input id="job" list="jobs">
+    <!-- datalist: 사용자가 입력할 때 추천 목록을 표시해 줌 -->
+    <datalist id="jobs"> <!-- input의 list와 datalist의 id가 같아야 됨 -->
+        <option value="학생"> <!-- "학생" 직업 옵션 -->
+        <option value="디자이너"> <!-- "디자이너" 직업 옵션 -->
+        <option value="퍼블리셔"> <!-- "퍼블리셔" 직업 옵션 -->
+        <option value="개발자"> <!-- "개발자" 직업 옵션 -->
+    </datalist>
+    <!-- datalist 태그는 input 필드와 연계되어 사용자가 입력을 시작할 때 미리 정의된 옵션을 추천 형태로 표시해 줍니다. -->
+</div>
+</body>
+</html>
